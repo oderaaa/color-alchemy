@@ -1,0 +1,41 @@
+{
+  "name": "color-alchemy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"nodemon ./dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "livebarn-dev",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@apollo/server": "^4.12.1",
+    "apollo-server-errors": "^3.3.1",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.17.2",
+    "graphql-tag": "^2.12.6",
+    "helmet": "^8.1.0",
+    "immer": "^10.1.1",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mkdirp": "^3.0.1",
+    "mongoose": "^8.15.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
+    "tsc-watch": "^6.3.1"
+  }
+}
