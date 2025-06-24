@@ -5,7 +5,7 @@ import {
   generateEmptyGrid,
   calculateColorDifference,
 } from "@/utils/colorUtils";
-import { fetchInitGameGql, recordGame } from "@/api/game/game";
+import { fetchInitGameGql, recordGame } from "@/app/api/game/game";
 import { StoreState } from "@/store/types";
 import { initialGameState } from "./state";
 
