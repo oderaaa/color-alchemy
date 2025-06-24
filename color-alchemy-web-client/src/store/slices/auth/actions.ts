@@ -6,7 +6,7 @@ import {
   register as apiRegister,
   logout as apiLogout,
   checkAuth as apiCheckAuth,
-} from "@/api/auth/auth";
+} from "@/app/api/auth/auth";
 
 export const createAuthSlice: StateCreator<StoreState, [], [], AuthSlice> = (
   set
